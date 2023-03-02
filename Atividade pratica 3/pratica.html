@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matricula</title>
+</head>
+<body>
+
+    <h1>Matricula aluno</h1>
+    <form>
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label for="letter">Nome</label>
+            <input type="text" name="Nome" id="letter" required pattern="[a-zA-Z\s]">
+            <br><br>
+            <label for="cpf">CPF:</label>
+            <input type="text" name="cpf" id="cpf" required pattern="(\d{3}\.\d{3}\.\d{3}-\d{2})|(\d{11})">
+            <br><br>
+            <label for="dt">Data: </label>
+            <input type="date" name="dt" id="dt" required min="2020-01-01" max="2022-02-03">
+            <br><br>
+            <label for="sexo">sexo:</label>
+            <input type="radio" name="sexo" id="feminino">Feminino
+            <input type="radio" name="sexo" id="masculino">Masculino
+            <br><br>
+            <label for="letter">Cidade</label>
+            <input type="text" name="cidade" id="letter" required pattern="[a-zA-Z\s]">
+            <label for="estados">Estados</label>
+            <select name="estados" id="estados">
+                <optgroup label="Sudeste">
+                    <option value="Sao Paulo">SP</option>
+                    <option value="Rio de Janeiro">RJ</option>
+                    <option value="Espirito Santo">ES</option>
+                    <option value="Minas Gerais">MG</option>
+                    </optgroup>
+                    <optgroup label="Centro-Oeste">
+                    <option value="Distrito Federal">DF</option>
+                    <option value="Goias">GO</option>
+                    <option value="Mato Grosso">MT</option>
+                    <option value="Mato Grosso do Sul">MS</option>
+                    </optgroup>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Dados da Matricula</legend>
+            <label for="letter">Curso</label>
+            <br>
+            <input type="radio" name="curso" id="">Analise e dessenvolvimento de sistemas
+            <input type="radio" name="curso" id="">Engenharia mecanica
+            <input type="radio" name="curso" id="">Tecnologia em sistemas para internet
+            <br><br>
+            <label for="letter">Disciplina(s) Optativa</label>
+            <br>
+            <input type="checkbox" name="disc" id="prog-robo"> Programação de Robôs
+            <input type="checkbox" name="disc" id="des-ia"> Desenvolvimento de Inteligências Artificiais<br>
+            <input type="checkbox" name="disc" id="mod-comp"> Modulagem Computacional 
+            <input type="checkbox" name="disc" id="iso-docker"> Ambientes isolados: desenvolvimento com Docker 
+            <br><br>
+            <label for="suggestion">Sugestões para disciplinas futuras:</label><br>
+                <textarea id="review" name="text-suggestion" rows="4" cols="50"></textarea>
+            <br><button type="button">  Enviar  </button>
+
+        </fieldset>
+
+
+    </form>
+    
+</body>
+</html>
