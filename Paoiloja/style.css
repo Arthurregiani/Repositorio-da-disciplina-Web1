@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap');
+
+
+/* Estilizando o cabeçalho */
+header {
+  background-color: #333;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+
+  background: linear-gradient(
+    270deg,
+    #ffffff -5.04%,
+    rgba(255, 122, 0, 0.47) 111.05%
+  );
+  border-radius: 0px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+    padding: 10px;
+  color: #000000;
+}
+
+nav h1 {
+  width: 185px;
+  height: 35px;
+  left: 70px;
+  top: 33px;
+
+  font-family: "Stalinist One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+
+  color: #000000;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Estilizando a seção de apresentação */
+#apresentacao {
+  background-color: #f7f7f7;
+  padding: 50px;
+  text-align: left;
+}
+
+#apresentacao h2 {
+
+    font-family: Stalinist One;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 94px;
+    text-align: left;    
+}
+
+#apresentacao h3 {
+
+  width: 401px;
+  height: 46px;
+  left: 46px;
+  top: 218px;
+  
+  font-family: 'Gentium Basic';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+  
+  color: #FF7B00;
+
+}
+
+
+#apresentacao button {
+    width: 224px;
+    height: 58px;
+    left: 51px;
+    top: 540px;
+    
+    background: #FF7B00;
+    border-radius: 30px;
+
+    
+}
+#apresentacao p {
+  margin-top: 10px;
+  
+  font-family: 'Gentium Basic';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #fff;
+}
+
+
+#apresentacao div.paulistinha{
+
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  left: 600px;
+  top: 61px;
+}
+
+#apresentacao div.circulo{
+
+  position: absolute;
+  width: 860px;
+  height: 930.79px;
+  left: 750px;
+  top: -120px;
+  border-collapse: collapse;
+}
+
+
+/* Estilizando a seção de destaques */
+#destaques {
+
+  width: 1280px;
+  height: 832px;
+  left: 0px;
+  top: 993px;
+  
+  background: #006C79;
+}
+
+#destaques img {
+
+  width: 736px;
+  height: 847px;
+  top: 0px;
+}
+
+#destaques p {
+    
+
+  position: absolute;
+  width: 235px;
+  height: 49px;
+  left: 211px;
+  top: 690px;
+  
+  font-family: 'Stalinist One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 33.28px;
+  line-height: 49px;
+  
+  color: #3D3D3D;
+  
+  
+}
+
+#destaques h3 {
+  position: absolute;
+  width: 618px;
+  height: 768px;
+  left: 622px;
+  top: 600px;
+  
+  font-family: 'Stalinist One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 129.792px;
+  line-height: 192px;
+  text-align: center;
+  
+  color: #121212;
+  
+  opacity: 0.3;
+}
+
+/* Estilizando a seção de tipos */
+#tipos {
+  background-color: #f7f7f7;
+  padding: 50px;
+  text-align: center;
+}
+
+#tipos h2 {
+    text-align: center;
+
+    font-family: 'Stalinist One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 71px;
+}
+
+#tipos ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#tipos li {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 24px;
+}
+
+/* Estilizando o rodapé */
+footer {
+  background-color: #333;
+  padding: 60px;
+  border-top: 1px solid #ccc;
+}
+
+footer nav ul {
+  text-align: left;
+}
+
+footer nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+footer nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+footer div.imgs{
+  float: right;
+  left: 80.93%;
+  right: 15.32%;
+  top: 20.58%;
+  bottom: 60.67%;
+  
+  
+}
