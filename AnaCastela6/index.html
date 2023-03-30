@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Ana Castela</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+        font-size: 20px;
+      }
+    
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+    
+
+      /* Style header */
+      .header {
+        background-color: #f1f1f1;
+        padding: 20px;
+        text-align: center;
+       
+      }
+    
+      /* Style barra de navegação */
+      .topnav {
+        
+        overflow: hidden;
+        background-color: #333;
+      }
+    
+      /* Style barra de navegação */
+      .topnav a {
+        font-size: 30px;
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size:25px;
+      }
+    
+      /* cor da barra */
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+    
+      /* colunas */
+      .column {
+        float: left;
+        width: 33.33%;
+        padding: 15px;
+      }
+    
+      .row::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    
+      /* Colunas responsivas*/
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+        }
+      }
+    
+      div.img {
+        margin: 5px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 100%;
+        max-width: 435px;
+      }
+    
+      div.img:hover {
+        border: 1px solid #333;
+      }
+    
+      div.img img {
+        width: 100%;
+        height: auto;
+      }
+    
+      div.desc {
+        padding: 15px;
+        text-align: center;
+      }
+    
+      section {
+        width: 100%;
+        display: inline-block;
+        background: #f2f2f2;
+        height: 20px;
+        margin: 0;
+        padding: 0;
+      }
+    
+      .footer-distributed {
+        background-color: #333;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+        box-sizing: border-box;
+        width: 100%;
+        text-align: left;
+        font-size: 20px;
+        padding: 45px 50px;
+      }
+    
+      .footer-distributed .footer-left p {
+        color: #8f9296;
+        font-size: 20px;
+        margin: 0;
+      }
+    
+      /* Footer links */
+      .footer-distributed p.footer-links {
+        font-weight: bold;
+        color: #ffffff;
+        margin: 0 0 10px;
+        padding: 0;
+        transition: ease .25s;
+        font-size: 20px;
+      }
+    
+      .footer-distributed p.footer-links a {
+        display: inline-block;
+        line-height: 1.8;
+        text-decoration: none;
+        color: inherit;
+        transition: ease .25s;
+      }
+    
+      .footer-distributed .footer-links a:before {
+        content: "·";
+        font-size: 20px;
+        left: 0;
+        color: #fff;
+        display: inline-block;
+        padding-right: 5px;
+      }
+    
+      .footer-distributed .footer-links .link-1:before {
+        content: none;
+      }
+    </style>
+  </head>
+
+  <!--Corpo-->
+  <body>
+    <div class="header">
+      <h1>Ana Castela</h1>
+      <h3>A Boiadeira</h3>
+    </div>
+
+    <div class="topnav">
+      <a href="index.html">Sobre</a>
+      <a href="musicas.html">Musicas</a>
+      <a href="loja.html">Loja</a>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <h2>A mais ouvida do Brasil</h2>
+        <p>
+          Dona do primeiro lugar na lista das 50 músicas mais tocadas no Brasil,
+          sendo uma estrela em ascensão no mundo sertanejo. Atualmente, ela
+          alcançou o topo do Spotify com o hit “Pipoco”, em parceria com a
+          Melody e o Dj Chris no Beat. Essa música conquistou o Brasil por causa
+          da mistura de ritmos, juntando Funk, Sertanejo e Eletrônica.
+        </p>
+      </div>
+
+      <div class="column">
+        <h2>Quem é a Boiadeira?</h2>
+        <p>
+          Ana Castela também é conhecida pelo apelido “Boiadeira”, a sua
+          primeira música lançada e que fez sucesso em 2021. Sobretudo, a
+          cantora de 18 anos nasceu em 16 de novembro de 2003 na cidade de Sete
+          Quedas, localizada no interior de Mato Grosso do Sul, na qual faz
+          fronteira com o Paraguai.
+        </p>
+      </div>
+
+      <div class="column">
+        <h2>Carreira</h2>
+        <p>
+          A carreira de Ana Castela começou a decolar quando ela postou um vídeo
+          cantando a música do cantor Loubet, na fazenda do seu pai, no
+          Paraguai. Em pouco tempo, o vídeo viralizou nas redes sociais, e
+          chegou até o atual empresário da cantora.
+        </p>
+      </div>
+    </div>
+    
+
+    <!--Galeria de imagens-->
+    <div class="galeria">
+
+      <div class="img">
+        <img
+          src="quem-e-ana-castela-cantora-mais-ouvida-do-brasil-99466093.jpg"
+          alt="ana"
+        />
+
+      </div>
+
+      <div class="img" >
+        <img src="ana-castela-542174973.png" alt="ana" />
+
+      </div>
+
+      <div class="img">
+        <img
+          src="ana-castela-machismo-musica-sertaneja-1068x712-3595218184.jpg"
+          alt="ana"
+        />
+
+      </div>
+
+    </div>
+
+
+  </body>
+
+  <section></section>
+
+		<footer class="footer-distributed">
+
+			<div class="footer-right">
+
+				<a href=""><img width="100%" src="Instagram_AppIcon_Aug2017-3969439294.png" alt=""></a>
+				<a href=""><img width="100%" src="facebook-logo-png-transparent-background-2548246143.png" alt=""></a>
+				<a href=""><img width="100%" src="twitter-logo-transparent-15-2999319961.png" alt=""></a>
+				<a href=""><img width="100%" src="1590430652red-youtube-logo-png-xl-2034092335.jpg" alt=""></a>
+
+			</div>
+
+			<div class="footer-left">
+
+				<p class="footer-links">
+					<a class="link-1" href="index.html">Sobre</a>
+
+					<a href="loja.html">Loja</a>
+
+					<a href="musicas.html">Musicas</a>
+
+				</p>
+
+				<p>Produtora AnaCastela &copy; 2023</p>
+			</div>
+
+		</footer>
+</html>
