@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cálculo do Delta</title>
+	<script>
+		function calcularDelta() {
+			//obtém os coeficientes informados pelo usuário
+			var a = parseInt(document.getElementById("coeficienteA").value);
+			var b = parseInt(document.getElementById("coeficienteB").value);
+			var c = parseInt(document.getElementById("coeficienteC").value);
+
+			//calcula o valor do delta
+			var delta = (b*b) - (4*a*c);
+
+			//exibe o passo a passo do cálculo
+			var resultado = document.getElementById("resultado");
+			resultado.innerHTML = "Δ = b² - 4ac <br>";
+			resultado.innerHTML += "Δ = " + b + "² - 4*" + a + "*" + c + " <br>";
+			resultado.innerHTML += "Δ = " + (b*b) + " - " + (4*a*c) + " <br>";
+			resultado.innerHTML += "Δ = " + delta;
+
+			//exibe o resultado final
+			document.getElementById("delta").innerHTML = "Δ = " + delta;
+		}
+	</script>
+</head>
+<body>
+	<h2>Cálculo do Delta</h2>
+	<label for="coeficienteA">Coeficiente a:</label>
+	<input type="number" id="coeficienteA"><br><br>
+	<label for="coeficienteB">Coeficiente b:</label>
+	<input type="number" id="coeficienteB"><br><br>
+	<label for="coeficienteC">Coeficiente c:</label>
+	<input type="number" id="coeficienteC"><br><br>
+	<button onclick="calcularDelta()">Calcular</button><br><br>
+	<div id="resultado"></div>
+	<div id="delta"></div>
+</body>
+</html>

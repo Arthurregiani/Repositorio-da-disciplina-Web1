@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Ordenação de Sequência de Caracteres</title>
+  </head>
+  <body>
+    <h1>Ordenação de Sequência de Caracteres</h1>
+    <label for="sequence">Insira uma sequência de caracteres:</label>
+    <input type="text" id="sequence" name="sequence">
+    <button onclick="sortSequence()">Ordenar</button>
+    <p id="originalSequence"></p>
+    <p id="sortedSequence"></p>
+    
+    <script>
+      function sortSequence() {
+        let input = document.getElementById("sequence").value;
+        let sequenceArray = input.split("");
+        let sortedArray = sequenceArray.sort();
+        let sortedSequence = sortedArray.join("");
+        
+        document.getElementById("originalSequence").innerHTML = "Sequência Original: " + input;
+        document.getElementById("sortedSequence").innerHTML = "Sequência Ordenada: " + sortedSequence;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Ordenação Inversa de Sequência de Caracteres</title>
+  </head>
+  <body>
+    <h1>Ordenação Inversa de Sequência de Caracteres</h1>
+    <label for="sequence">Insira uma sequência de caracteres:</label>
+    <input type="text" id="sequence" name="sequence">
+    <button onclick="reverseSequence()">Inverter Sequência</button>
+    <p id="originalSequence"></p>
+    <p id="reversedSequence"></p>
+    
+    <script>
+      function reverseSequence() {
+        let input = document.getElementById("sequence").value;
+        let originalSequence = input;
+        let reversedSequence = input.split("").reverse().join("");
+        
+        document.getElementById("originalSequence").innerHTML = "Sequência Original: " + originalSequence;
+        document.getElementById("reversedSequence").innerHTML = "Sequência Invertida: " + reversedSequence;
+      }
+    </script>
+  </body>
+</html>

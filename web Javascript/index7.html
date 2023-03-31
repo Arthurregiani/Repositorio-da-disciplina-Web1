@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Soma de múltiplos de 3 ou 5</title>
+</head>
+<body>
+	<h3>Encontre a soma de todos os múltiplos de 3 ou 5 abaixo de 1000:</h3>
+
+	<button onclick="encontrarSoma()">Encontrar soma</button>
+
+	<div id="resultado"></div>
+
+	<script>
+		function encontrarSoma() {
+			var soma = 0;
+
+			for (var i = 1; i < 1000; i++) {
+				if (i % 3 === 0 || i % 5 === 0) {
+					soma += i;
+				}
+			}
+
+			document.getElementById("resultado").innerHTML = "A soma de todos os múltiplos de 3 ou 5 abaixo de 1000 é " + soma;
+		}
+	</script>
+</body>
+</html>

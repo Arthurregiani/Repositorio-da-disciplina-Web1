@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Verificar Maioridade</title>
+</head>
+<body>
+	<h3>Informe sua idade:</h3>
+	<input type="number" id="idade" placeholder="Idade">
+	<br><br>
+	<button onclick="verificarMaioridade()">Verificar Maioridade</button>
+
+	<script>
+		function verificarMaioridade() {
+			var idade = parseInt(document.getElementById("idade").value);
+
+			if(idade >= 18) {
+				alert("Você é maior de idade!");
+			} else {
+				alert("Você é menor de idade!");
+			}
+		}
+	</script>
+</body>
+</html>

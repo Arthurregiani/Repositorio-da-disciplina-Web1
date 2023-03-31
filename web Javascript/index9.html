@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Encontre o 1001º número primo</title>
+</head>
+<body>
+	<h3>Encontre o 1001º número primo:</h3>
+
+	<button onclick="encontrarPrimo()">Encontrar primo</button>
+
+	<div id="resultado"></div>
+
+	<script>
+		function encontrarPrimo() {
+			var contador = 0;
+			var numero = 2;
+
+			while (contador < 1001) {
+				var primo = true;
+
+				for (var i = 2; i <= Math.sqrt(numero); i++) {
+					if (numero % i === 0) {
+						primo = false;
+						break;
+					}
+				}
+
+				if (primo) {
+					contador++;
+				}
+
+				numero++;
+			}
+
+			document.getElementById("resultado").innerHTML = "O 1001º número primo é " + (numero - 1);
+		}
+	</script>
+</body>
+</html>

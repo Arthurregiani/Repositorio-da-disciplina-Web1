@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Números primos entre 0 e 200</title>
+	<style>
+		table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+			padding: 5px;
+			text-align: center;
+		}
+
+		.primo {
+			background-color: yellow;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<h3>Números primos entre 0 e 200:</h3>
+
+	<table>
+		<tr>
+			<th>Número</th>
+			<th>Primo?</th>
+		</tr>
+	</table>
+
+	<script>
+		var tabela = document.querySelector("table");
+
+		for (var numero = 0; numero <= 200; numero++) {
+			var ehPrimo = true;
+
+			if (numero < 2) {
+				ehPrimo = false;
+			} else {
+				for (var i = 2; i <= Math.sqrt(numero); i++) {
+					if (numero % i === 0) {
+						ehPrimo = false;
+						break;
+					}
+				}
+			}
+
+			var linha = tabela.insertRow(-1);
+			var numeroCelula = linha.insertCell(0);
+			var primoCelula = linha.insertCell(1);
+
+			numeroCelula.innerHTML = numero;
+
+			if (ehPrimo) {
+				primoCelula.innerHTML = "Sim";
+				primoCelula.classList.add("primo");
+			} else {
+				primoCelula.innerHTML = "Não";
+			}
+		}
+	</script>
+</body>
+</html>

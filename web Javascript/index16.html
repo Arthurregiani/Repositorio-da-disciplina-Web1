@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Operação de potenciação</title>
+</head>
+<body>
+	<h1>Operação de potenciação</h1>
+	<p>Base: 2</p>
+	<p>Expoente: 8</p>
+	<table>
+		<tr>
+			<th>Expoente</th>
+			<th>Potência</th>
+		</tr>
+		<script>
+			var base = 2;
+			var expoente = 8;
+			for(var i = 0; i <= expoente; i++) {
+				var potencia = Math.pow(base, i);
+				document.write("<tr><td>" + i + "</td><td>" + base + "<sup>" + i + "</sup> = " + potencia + "</td></tr>");
+			}
+		</script>
+	</table>
+</body>
+</html>

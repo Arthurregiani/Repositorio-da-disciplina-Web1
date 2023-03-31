@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Potenciação com For</title>
+</head>
+<body>
+	<h1>Potenciação com For</h1>
+	<div id="resultado"></div>
+
+	<script>
+		var base = 2;
+		var expoente = 8;
+		var potencia = 1;
+
+		for (var i = 0; i < expoente; i++) {
+			potencia *= base;
+			document.getElementById("resultado").innerHTML += base + "<sup>" + (i+1) + "</sup> = " + potencia + "<br>";
+		}
+	</script>
+</body>
+</html>

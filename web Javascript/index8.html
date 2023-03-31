@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Soma dos termos pares da sequência de Fibonacci</title>
+</head>
+<body>
+	<h3>Encontre a soma dos termos pares da sequência de Fibonacci a partir dos pares 0 e 1, cujos valores não excedam cinquenta mil:</h3>
+
+	<button onclick="encontrarSoma()">Encontrar soma</button>
+
+	<div id="resultado"></div>
+
+	<script>
+		function encontrarSoma() {
+			var soma = 0;
+			var a = 0;
+			var b = 1;
+
+			while (b <= 50000) {
+				if (b % 2 === 0) {
+					soma += b;
+				}
+
+				var c = a + b;
+				a = b;
+				b = c;
+			}
+
+			document.getElementById("resultado").innerHTML = "A soma dos termos pares da sequência de Fibonacci é " + soma;
+		}
+	</script>
+</body>
+</html>

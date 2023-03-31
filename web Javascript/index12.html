@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inverter sequência de caracteres</title>
+</head>
+<body>
+	<label for="texto">Digite uma sequência de caracteres:</label>
+	<input type="text" id="texto">
+	<button onclick="inverter()">Inverter</button>
+	<div id="resultado"></div>
+
+	<script>
+		function inverter() {
+			let texto = document.getElementById("texto").value;
+			let arrayTexto = texto.split('');
+			let arrayInvertido = arrayTexto.reverse();
+			let textoInvertido = arrayInvertido.join('');
+			document.getElementById("resultado").innerHTML = "Sequência invertida: " + textoInvertido;
+		}
+	</script>
+</body>
+</html>
