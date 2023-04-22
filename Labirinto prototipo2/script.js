@@ -23,9 +23,10 @@ function embaralhar(array) {
     }
     return array;
 }
+
 //mensagem de vitoria
 function displayVitória(moves) {
-    document.getElementById("movimentos").innerHTML = "Voce se moveu:" + moves + "vezes";
+    document.getElementById("movimentos").innerHTML = "Você se moveu: " + moves + " vezes, e acendeu o paiero";
     if (document.getElementById("Message-Container").style.visibility == "visible") {
         document.getElementById("Message-Container").style.visibility = "hidden";
     } else {
@@ -61,7 +62,7 @@ function Labirinto(Largura, Altura) {
     this.endCoord = function () {
         return cordenadaFinal;
     };
-    //gera a matrix do mapa 
+    //constroi as propiedades de cada elemento q constitui o mapa
     function gerarMapa() {
         mapaLab = new Array(altura);
         for (y = 0; y < altura; y++) {
@@ -164,8 +165,9 @@ function Labirinto(Largura, Altura) {
     defineInicioFim();
     defineLab();
 }
+
 //desenho do labirinto
-function DesenhoLab(Maze, ctx, cellsize, endSprite = null) {
+function DesenhoLab(Maze, ctx, cellsize, figFinal = null) {
     var map = Maze.map();
     var cellSize = cellsize;
     var drawEndMethod;
@@ -249,11 +251,11 @@ function DesenhoLab(Maze, ctx, cellsize, endSprite = null) {
         var offsetRight = cellSize / 25;
         var coord = Maze.endCoord();
         ctx.drawImage(
-            endSprite,
+            figFinal,
             2,
             2,
-            endSprite.width,
-            endSprite.height,
+            figFinal.width,
+            figFinal.height,
             coord.x * cellSize + offsetLeft,
             coord.y * cellSize + offsetLeft,
             cellSize - offsetRight,
@@ -266,7 +268,7 @@ function DesenhoLab(Maze, ctx, cellsize, endSprite = null) {
         ctx.clearRect(0, 0, canvasSize, canvasSize);
     }
 
-    if (endSprite != null) {
+    if (figFinal != null) {
         drawEndMethod = desenhaFigFinal;
     } else {
         drawEndMethod = desenhaFlagFinal;
@@ -275,6 +277,7 @@ function DesenhoLab(Maze, ctx, cellsize, endSprite = null) {
     desenhaMapa();
     drawEndMethod();
 }
+
 //construtor do player
 function Player(lab, cont, tamCel, completo, fig = null) {
     var ctx = cont.getContext("2d");
@@ -518,7 +521,7 @@ function start() {
         player = null;
     }
 
-    dificuldade = 25;
+    dificuldade = document.getElementById("dificuldade").value;
     //tamanho dos elementos
     tamCell = labCanvas.width / dificuldade;
     //gera o labirinto

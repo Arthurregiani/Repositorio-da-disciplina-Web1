@@ -28,7 +28,7 @@ body {
   display: block;
   border: solid 5px black;
 }
-input {
+input{
   background-color: #003030;
   height: 45px;
   width: 150px;
@@ -41,6 +41,21 @@ input {
   font-family: 'Julee';
   font-style: normal;
 }
+
+input.dificuldade{
+  background-color: #003030;
+  height: 20px;
+  width: 150px;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  display: inline-block;
+  font-size: 15px;
+  text-align: center;
+  font-family: 'Julee';
+  font-style: normal;
+}
+
 
 #Message-Container {
   visibility: hidden;

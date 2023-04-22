@@ -15,30 +15,35 @@
         <div id="message">
             <h1>Parabéns</h1>
             <p id="movimentos"></p>
-            <input id="okBtn" type="button" onclick="toggleVisablity('Message-Container')" value="Cool!" />
+            <input id="okBtn" type="button" onclick="displayVitória('Message-Container')" value="ok" />
         </div>
     </div>
+
     <div id="menu">
         <input type="button" onclick="start()" value="Start" />
+        <input id="dificuldade" class="dificuldade" type="number" />
     </div>
+
     <div id="view">
         <div id="mazeContainer">
             <canvas id="mazeCanvas" class="border" height="1100" width="1100"></canvas>
         </div>
     </div>
+
 </div>
+
 <div class="texto">
     <h1>Laberintite</h1>
     <p>Faça o paiero chegar até o isqueiro</p>
-    <p>Precione Start</p>
-    <p><br>Use as setas do teclado para mover o paiero</p>
+    <p>Primeiro selecione a dificuldade<br>Quanto maior o numero mais difícil <br>Agora precione 'Start'</p>
+
+    <p>Use as setas do teclado para mover o paiero</p>
 </div>
+
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
 
     <script src="script.js"></script>
 
-    
 </body>
-
 </html>
