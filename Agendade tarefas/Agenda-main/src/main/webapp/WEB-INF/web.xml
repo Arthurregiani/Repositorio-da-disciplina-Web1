@@ -1,0 +1,119 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  
+  
+  
+  
+  <servlet>
+  	<servlet-name>CadastroServlet</servlet-name>
+  	<display-name>CadastroServlet</display-name>
+  	<description></description>
+  	<servlet-class>controller.CadastroServlet</servlet-class>
+  </servlet>
+  
+  
+  
+  
+  <servlet>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<display-name>LoginServlet</display-name>
+  	<description></description>
+  	<servlet-class>controller.LoginServlet</servlet-class>
+  </servlet>
+  
+  
+  
+  <servlet>
+  	<servlet-name>TodasServlet</servlet-name>
+  	<display-name>TodasServlet</display-name>
+  	<description></description>
+  	<servlet-class>controller.TodasServlet</servlet-class>
+  </servlet>
+  
+  
+  
+  
+  <servlet>
+  	<servlet-name>EditarServlet</servlet-name>
+  	<display-name>EditarServlet</display-name>
+  	<description></description>
+  	<servlet-class>controller.EditarServlet</servlet-class>
+  </servlet>
+  
+  
+  
+  
+  
+  <servlet>
+  	<servlet-name>SairServlet</servlet-name>
+  	<display-name>SairServlet</display-name>
+  	<description></description>
+  	<servlet-class>controller.SairServlet</servlet-class>
+  </servlet>
+  
+  
+  
+  <servlet>
+  	<servlet-name>AbertasServlet</servlet-name>
+  	<display-name>AbertasServlet</display-name>
+  	<description></description>
+  	<servlet-class>controller.AbertasServlet</servlet-class>
+  </servlet>
+  
+  
+  
+  
+  <servlet>
+  	<servlet-name>CompletasServlet</servlet-name>
+  	<display-name>CompletasServlet</display-name>
+  	<description></description>
+  	<servlet-class>controller.CompletasServlet</servlet-class>
+  </servlet>
+  
+  
+  
+  <servlet-mapping>
+  	<servlet-name>CadastroServlet</servlet-name>
+  	<url-pattern>/CadastroServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>TodasServlet</servlet-name>
+  	<url-pattern>/TodasServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>EditarServlet</servlet-name>
+  	<url-pattern>/EditarServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>SairServlet</servlet-name>
+  	<url-pattern>/SairServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>AbertasServlet</servlet-name>
+  	<url-pattern>/AbertasServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>CompletasServlet</servlet-name>
+  	<url-pattern>/CompletasServlet</url-pattern>
+  </servlet-mapping>
+</web-app>

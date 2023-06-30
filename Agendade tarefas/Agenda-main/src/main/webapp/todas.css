@@ -1,0 +1,143 @@
+@charset "ISO-8859-1";
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+h1 {
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.username {
+    font-weight: bold;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+  margin: 0;
+}
+
+.menu ul li {
+    display: inline;
+  margin-right: 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+.empty-tasks {
+    text-align: center;
+    color: #999;
+}
+
+table {
+    width: 100%;
+}
+
+.task-content {
+    margin-left: 30px;
+}
+
+.description {
+    margin-top: 5px;
+    color: #777;
+}
+
+.meta {
+    color: #777;
+}
+
+.task-actions {
+    margin-top: 10px;
+}
+
+.remove-button,
+.edit-button {
+    border: none;
+    background: none;
+    color: #999;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px;
+    padding: 0;
+}
+
+.remove-button:hover,
+.edit-button:hover {
+    color: #333;
+}
+
+.add-task {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.add-task input {
+    width: 450px;
+    height: 30px;
+    margin: 2px;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.add-task button {
+    display: inline-block;
+    height: 30px;
+    margin: 2px;
+    width: 448px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.add-task button:hover {
+    background-color: #45a049;
+}
+
+.group {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #4CAF50;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.type1 {
+    background-color: #4CAF50;
+}
+
+.btn-txt {
+    text-decoration: none;
+    color: #fff;
+}
